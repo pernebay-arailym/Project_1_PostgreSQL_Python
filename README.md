@@ -1,0 +1,1 @@
+This project is about connection PostgreSQL with Python and creation of the table of employee.
