@@ -25,6 +25,10 @@ try:
     
     cursor.execute(create_script)
 
+    insert_script = 'INSERT INTO employee (id, name, salary, dept_id) VALUES (%s, %s, %s, %s)'
+    insert_value = (1, 'Arailym', 30000, 'D1')
+    cursor.execute(insert_script, insert_value)
+
     connectionToSql.commit()
 except Exception as error:
     print(error)
